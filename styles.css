@@ -6,6 +6,9 @@ p {
 #source {
     font-style:italic;
 }
+nav {
+    margin-top: 20px;
+}
 
 nav a {
     color: grey;
@@ -14,7 +17,6 @@ nav a {
     border-style:solid;
     text-transform: uppercase;
     font-style:oblique;
-    margin-top: 20px;
     
 }
 

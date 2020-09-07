@@ -1,6 +1,6 @@
 p {
     font-weight: bold;
-    color: grey;
+
 }
 
 #source {
@@ -8,5 +8,18 @@ p {
 }
 
 nav a {
-    color:black;
+    color: grey;
+    text-decoration:none;
+    padding:20px;
+    border-style:solid;
+    text-transform: uppercase;
+    font-style:oblique;
+    
+}
+html{
+    margin-left: 30px;
+}
+
+footer{
+    background-color: grey;
 }

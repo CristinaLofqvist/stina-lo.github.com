@@ -1,5 +1,5 @@
 p {
-    font-weight: bold;
+    max-width: 300px;
 
 }
 
@@ -10,7 +10,7 @@ p {
 nav a {
     color: grey;
     text-decoration:none;
-    padding:20px;
+    padding:10px;
     border-style:solid;
     text-transform: uppercase;
     font-style:oblique;

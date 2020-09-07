@@ -14,7 +14,13 @@ nav a {
     border-style:solid;
     text-transform: uppercase;
     font-style:oblique;
+    margin-top: 20px;
     
+}
+
+a:hover{
+    background-color: grey;
+    color:white;
 }
 html{
     margin-left: 30px;

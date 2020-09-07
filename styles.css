@@ -2,3 +2,11 @@ p {
     font-weight: bold;
     color: grey;
 }
+
+#source {
+    font-style:italic;
+}
+
+nav a {
+    color:black;
+}

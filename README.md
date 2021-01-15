@@ -1,1 +1,1 @@
-# stina-lo.github.com
+# stina-Lo.github.io

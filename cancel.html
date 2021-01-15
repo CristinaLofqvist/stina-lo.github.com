@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <!--*** Projekt webbanvändbarehet by Cristina Löfqvist Mid Sweden university Jan 2021 ***-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Assets/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    <title>Projekt färdtjänst</title>
+</head>
+
+<body onresize="toggleOpen('burgerMenu','mainNav', 'flex' )">
+    <header class="flexbox flex-justify-space-between">
+        <div class="logoPitch flexbox">
+            <a href="index.html" class="logotype"><img src='./Assets/logo.png' alt="logotype" /></a>
+            <p class="pitch">Vi finns för att ge dig
+                bästa möjliga
+                service.</p>
+        </div>
+        <div class="flexbox flex-direction-column flex-justify-flex-end">
+            <nav class="mainNav" id="mainNav">
+                <span class="Lighter"><a href="">Start</a></span>
+                <a href="login.html">Logga ut</a>
+                <a href="mypage.html">Mina sidor</a>
+                <a href="about.html">Om färdtjänst</a>
+                <a href="info.html">Info</a>
+            </nav>
+        </div>
+        <!--Burger meny toggles open when window resize-->
+        <div id="burgerMenu" onclick="toggleOpen('burgerMenu','mainNav','flex')">
+            <div class="burgerBun"></div>
+            <div class="burgerBun"></div>
+            <div class="burgerBun"></div>
+        </div>
+
+        <div class="rightHeader">
+            <img src="./Assets/icons8-sound-50.png" alt="icon of speaker">
+            <img src="./Assets/icons8-great-britain-48.png" alt="flag of great britain">
+            <img src="./Assets/search.png" alt="searchicon">
+        </div>
+    </header>
+    <main class="flexbox flex-align-i-center flex-direction-column">
+        <div class="flex-direction-row flexbox flex-justify-space-around w-40">
+            <nav class="secondsaryNav">
+                <span class="Lighter"><a href="cancel.html">Avboka</a></span>
+                <img src="./Assets/Group 26.png" class="arrow" alt="illustration of arrow">
+               <a href="cancel-confirm.html">Bekräfta avbokning</a>
+            </nav>
+        </div>
+        <div class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
+            <img src="./Assets/john-towner-3Kv48NS4WUU-unsplash.png" alt="photograph of road">
+            <div class="flexbox flex-direction-row">
+                <h1>Avboka resa</h1>
+                <span><hr></span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="flexbox flex-align-i-center flex-direction-row flex-wrap-wrap">
+            <img src="./Assets/icons8-checked-50.png" alt="icon of checkmark">
+            <h2>Val av resa för avbokning:</h2>
+        </div>
+        <br>
+        <br>
+        <div class="flexbox flex-direction-row flexbox flex-align-i-center flex-justify-space-around infoDiv">
+            <img src="./Assets/icons8-info-50.png" alt="icon of info" />
+            <p class="infoP">Följande resa är vald för avbokning:</p>
+        </div>
+        <br>
+        <div>
+            <table class="bokboardTable">
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Avgång</th>
+                        <th>Ankost</th>
+                        <th>Restid</th>
+                        <th>Pris</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            21 Jan
+                        </td>
+                        <td>
+                            ca:13:15
+                        </td>
+                        <td>
+                            ca:14:25
+                        </td>
+                        <td>
+                            1h 10min
+                        </td>
+                        <td>
+                            120kr
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <div class="flexbox flex-direction-row flexbox flex-align-i-center flex-justify-space-around infoDiv">
+            <img src="./Assets/icons8-info-50.png" alt="icon of info" />
+            <p class="infoP">När du klickar på avboka nedan går det inte att ändra ditt val</p>
+        </div>
+        <br>
+        <br>
+        <div class="flexbox flex-direction-row flexbox flex-align-i-center flex-justify-space-around infoDiv">
+            <img src="./Assets/icons8-remove-50.png" alt="icon of trashcan" />
+            <p>Vill du avboka denna resan?</p>
+        </div>
+        <div>
+            <a href="cancel-confirm.html"><button class="loginButton" formaction="cancel-confirm.html">Avboka</button></a>
+            <a href="mypage.html"><button class="loginButton" formaction="mypage.html">Ångra</button></a>
+        </div>
+    </main>
+
+    <footer class="flexbox flex-justify-space-evenly">
+        <div class=" logoPitch flexbox flex-direction-row">
+            <img class="logo" src="./Assets/logo.png" alt="logotype">
+            <div class="pitch">
+                <p>Hos oss kan du boka färdtjänstresor & sjukresor.</p>
+            </div>
+        </div>
+        <div class="footerMiddleDiv flexbox flex-direction-column flex-align-i-center">
+            <h3>Kontakta oss</h3>
+            <div class="flexbox flex-align-i-center flex-justify-space-around">
+                <img src="./Assets/icons8-ringer-volume-50.png" alt="icon of phone">
+                <a href="">046 333 222</a>
+            </div>
+            <div class="flexbox flex-align-i-center flex-justify-space-around">
+                <img src="./Assets/icons8-mail-50.png" alt="icon of mail">
+                <a href="">iter@färdtjänst.se</a>
+            </div>
+        </div>
+        <div class=" maxWidth footerMiddleDiv flexbox flex-direction-column flex-align-i-center">
+            <h3>Postadress</h3>
+            <div class="flexbox flex-align-i-center flex-justify-space-around">
+                <img src="./Assets/icons8-home-50.png" alt="icon of house">
+                <a href="">iter färdtjänst. Clemenstorget 24C. 222 70 Lund</a>
+            </div>
+        </div>
+        <div class="footerMiddleDiv flexbox flex-direction-column flex-align-i-center">
+            <h3>Länkar</h3>
+            <a href="login.html">Logga in</a>
+            <a href="about.html">Se instruktionsvideo</a>
+            <a href="info.html">Ljudinspelning</a>
+        </div>
+        <div class="footerMiddleDiv flexbox flex-align-i-center">
+
+            <h3 class="flex-justify-center">Socialamedier</h3>
+            <div class="socialMediaIcon flexbox flex-direction-row">
+                <a href="https://www.facebook.com/"><img src="./Assets/iconfinder_1_Facebook2_colored_svg_5296500.png"
+                        alt="facebookicon"></a>
+                <a href="https://www.linkedin.com/"><img
+                        src="./Assets/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png" alt="linkedin icon"></a>
+                <a href="https://www.pinterest.com/"><img src="./Assets/iconfinder_1_Pinterest_colored_svg_5296503.png"
+                        alt="pinterest icon"></a>
+                <a href="https://www.twitter.com/"><img src="./Assets/iconfinder_1_Twitter3_colored_svg_5296516.png"
+                        alt="twitter icon"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

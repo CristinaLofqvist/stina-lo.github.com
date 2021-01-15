@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <!--*** Projekt webbanvändbarehet by Cristina Löfqvist Mid Sweden university Jan 2021 ***-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Assets/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    <title>Projekt färdtjänst</title>
+</head>
+
+<body onresize="toggleOpen('burgerMenu','mainNav', 'flex' )">
+    <header class="flexbox flex-justify-space-between">
+        <div class="logoPitch flexbox">
+            <a href="index.html" class="logotype"><img src='./Assets/logo.png' alt="logotype" /></a>
+            <p class="pitch">Vi finns för att ge dig
+                bästa möjliga
+                service.</p>
+        </div>
+        <div class="flexbox flex-direction-column flex-justify-flex-end">
+            <nav class="mainNav" id="mainNav">
+                <a href="index.html">Start</a>
+                <a href="login.html">Logga in</a>
+                <a href="about.html">Om färdtjänst</a>
+                <span class="Lighter"><a href="info.html">Info</a></span>
+            </nav>
+        </div>
+        <!--Burger meny toggles open when window resize-->
+        <div id="burgerMenu" onclick="toggleOpen('burgerMenu','mainNav','flex')">
+            <div class="burgerBun"></div>
+            <div class="burgerBun"></div>
+            <div class="burgerBun"></div>
+        </div>
+
+        <div class="rightHeader">
+            <img src="./Assets/icons8-sound-50.png" alt="icon of speaker">
+            <img src="./Assets/icons8-great-britain-48.png" alt="flag of great britain">
+            <img src="./Assets/search.png" alt="searchicon">
+        </div>
+    </header>
+    <main>
+        <div class="infopageTopmain flexbox flex-direction-row flex-justify-center">
+            <img src="./Assets/john-towner-3Kv48NS4WUU-unsplash.png" alt="photograph of road" />
+            <div class="flexbox flex-direction-column">
+                <div class="flexbox flex-direction-row">
+                    <h1>Information om hur du använder tjänsten</h1>
+                </div>
+               <span><hr></span> 
+                <div class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
+                    <img src="./Assets/icons8-info-50.png" alt="icon of info" class="infoicon" />
+                    <p class="infoP">Om du har blivit beviljad sjukresa eller färdtjänst
+                        och vill boka en resa kan du läsa här för att få information om tjänsten. </p>
+                </div>
+            </div>
+        </div>
+        <div class="infoBoxWrapper flexbox flex-direction-column">
+            <div class="infoBox">
+                <img src="./Assets/icons8-ringer-volume-50.png" alt="icon of phone">
+                <p>Du kan enkelt boka dina resor hos oss via telefon eller via webben.
+                    I samband med att du bokar en resa hos oss behöver du tala om,
+                    på vilken plats du vill bli hämtad, vart du önskar resa och
+                    när du behöver vara framme, samt om du behöver ha några
+                    hjälpmedel med dig.
+                    Detta för att vi ska vara förberedda för att kunna ge dig bästa möjliga service.
+                </p>
+            </div>
+            <div class="infoBox">
+                <img src="./Assets/icons8-tick-box-50.png" alt="icon of checkmark">
+                <p>För att kunna boka din resa behöver vi veta ditt kundnummer
+                    eller personnummer. Du kommer att få besked om när du blir
+                    hämtad och vad det kommer att kosta.
+                    Du kan också få en bokningsbekräftelse via sms om du önskar.</p>
+            </div>
+            <div class="infoBox">
+                <img src="./Assets/icons8-clock-50.png" alt="icon of clock">
+                <p>Var förberedd på att en viss väntetid kan förekomma.
+                    Du behöver vara på plats tio minuter innan avtalad tid och vara beredd på att vänta upp till tio
+                    minuter efter avtalad tid. Om föraren inte dykt upp på mer än tio minuter efter avtalad tid kan du
+                    ringa vår Sen bil tjänst
+                    som då tar kontakt med din förare.
+                    Du når sen bil tjänsten på telefonnummer: 0046 7889090</p>
+            </div>
+            <div class="infoBox">
+                <img src="./Assets/icons8-family-50.png" alt="icon of family">
+                <p>Du har möjlighet att ta med dig två personer på resan
+                    inklusive ledsagare om du är berättigad till ledsagare.
+                    Meddela oss gärna i förväg om du kommer ta med dig flera personer på resan.
+                    Om du har barn har du möjlighet att ta med dig tre barn på din resa.
+                    Detta gäller för barn under 18 år. </p>
+            </div>
+            <div class="infoBox">
+                <img src="./Assets/icons8-helping-hand-52.png" alt="icon of helping hand">
+                <p>
+                    Våra förare assisterar dig att komma in och ut ur fordonet
+                    samt säkra dig och ditt hjälpmedel för färden. </p>
+            </div>
+        </div>
+        <!--End of div infoBoxWrapper-->
+        <p class="source">Källa: https://www.skanetrafiken.se/serviceresor/om-du-reser-med-fardtjanst/</p>
+    </main>
+    <footer class="flexbox flex-justify-space-evenly">
+        <div class=" logoPitch flexbox flex-direction-row">
+            <img class="logo" src="./Assets/logo.png" alt="logotype">
+            <div class="pitch">
+                <p>Hos oss kan du boka färdtjänstresor & sjukresor.</p>
+            </div>
+        </div>
+        <div class="footerMiddleDiv flexbox flex-direction-column flex-align-i-center">
+            <h3>Kontakta oss</h3>
+            <div class="flexbox flex-align-i-center flex-justify-space-around">
+                <img src="./Assets/icons8-ringer-volume-50.png" alt="icon of phone">
+                <a href="">046 333 222</a>
+            </div>
+            <div class="flexbox flex-align-i-center flex-justify-space-around">
+                <img src="./Assets/icons8-mail-50.png" alt="icon of mail">
+                <a href="">iter@färdtjänst.se</a>
+            </div>
+        </div>
+        <div class=" maxWidth footerMiddleDiv flexbox flex-direction-column flex-align-i-center">
+            <h3>Postadress</h3>
+            <div class="flexbox flex-align-i-center flex-justify-space-around">
+                <img src="./Assets/icons8-home-50.png" alt="icon of house">
+                <a href="">iter färdtjänst. Clemenstorget 24C. 222 70 Lund</a>
+            </div>
+        </div>
+        <div class="footerMiddleDiv flexbox flex-direction-column flex-align-i-center">
+            <h3>Länkar</h3>
+            <a href="login.html">Logga in</a>
+            <a href="about.html">Se instruktionsvideo</a>
+            <a href="info.html">Ljudinspelning</a>
+        </div>
+        <div class="footerMiddleDiv flexbox flex-align-i-center">
+
+            <h3 class="flex-justify-center">Socialamedier</h3>
+            <div class="socialMediaIcon flexbox flex-direction-row">
+                <a href="https://www.facebook.com/"><img src="./Assets/iconfinder_1_Facebook2_colored_svg_5296500.png"
+                        alt="facebookicon"></a>
+                <a href="https://www.linkedin.com/"><img
+                        src="./Assets/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png" alt="linkedin icon"></a>
+                <a href="https://www.pinterest.com/"><img src="./Assets/iconfinder_1_Pinterest_colored_svg_5296503.png"
+                        alt="pinterest icon"></a>
+                <a href="https://www.twitter.com/"><img src="./Assets/iconfinder_1_Twitter3_colored_svg_5296516.png"
+                        alt="twitter icon"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

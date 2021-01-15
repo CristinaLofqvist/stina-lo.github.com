@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <!--*** Projekt webbanvändbarehet by Cristina Löfqvist Mid Sweden university Jan 2021 ***-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Assets/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    <title>Projekt färdtjänst</title>
+</head>
+
+<body onresize="toggleOpen('burgerMenu','mainNav', 'flex' )">
+    <header class="flexbox flex-justify-space-between">
+        <div class="logoPitch flexbox">
+            <a href="index.html" class="logotype"><img src='./Assets/logo.png' /></a>
+            <p class="pitch">Vi finns för att ge dig
+                bästa möjliga
+                service.</p>
+        </div>
+        <div class="flexbox flex-direction-column flex-justify-flex-end">
+            <nav class="mainNav" id="mainNav">
+                <a href="index.html">Start</a>
+                <a href="login.html">Logga ut</a>
+                <span class="Lighter"><a href="mypage.html">Mina sidor</a></span>
+                <a href="about.html">Om färdtjänst</a>
+                <a href="info.html">Info</a>
+            </nav>
+        </div>
+        <!--Burger meny toggles open when window resize-->
+        <div id="burgerMenu" onclick="toggleOpen('burgerMenu','mainNav','flex')">
+            <div class="burgerBun"></div>
+            <div class="burgerBun"></div>
+            <div class="burgerBun"></div>
+        </div>
+
+        <div class="rightHeader">
+            <img src="./Assets/icons8-sound-50.png">
+            <img src="./Assets/icons8-great-britain-48.png">
+            <img src="./Assets/search.png">
+        </div>
+    </header>
+    <main class="flexbox firstPageMain flex-align-i-center flex-direction-column">
+        <div class="flex-direction-row flexbox flex-justify-space-around w-40">
+            <div></div>
+            <nav class="secondsaryNav">
+                <span class="Lighter"><a href="mypage.html">Mina sidor</a></span>
+                <img src="./Assets/Group 26.png" class="arrow" alt="illustration of arrow">
+                <a href="mypage-myinfo.html">Mina inställningar</a>
+                <img src="./Assets/Group 26.png" class="arrow" alt="illustration of arrow">
+                <a href="mypage.html">Mina intyg</a>
+            </nav>
+        </div>
+        <br>
+        <br>
+        <div class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
+            <img src="./Assets/vincent-van-zalinge-fiQ7YrVFPqs-unsplash.png" alt="photograph of nature">
+            <div>
+                <div class="flexbox flex-direction-row">
+                    <img src="./Assets/icons8-customer-64.png" alt="icon of avatar">
+                    <h2>Mina sidor</h2>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <div class="flexbox flex-direction-row">
+                <img src="./Assets/icons8-checked-50.png" alt="icon of checkmark">
+                <p>Mina bokade resor:</p>
+            </div>
+            <table class="bokboardTable">
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Avgång</th>
+                        <th>Ankost</th>
+                        <th>Restid</th>
+                        <th>Pris</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            21 Jan
+                        </td>
+                        <td>
+                            ca:13:15
+                        </td>
+                        <td>
+                            ca:14:25
+                        </td>
+                        <td>
+                            1h 10min
+                        </td>
+                        <td>
+                            120kr
+                        </td>
+                        <td>
+                            <a href="cancel.html"><button class="bokboardTableButton">Avboka<img
+                                        src="./Assets/icons8-remove-50.png" alt="icon of trashcan" /></button></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <div class="flexbox flex-direction-row infoDiv">
+                <img src="./Assets/icons8-checked-50.png" alt="icon of checkmark">
+                <p>Mina senaste resor:</p>
+            </div>
+            <table class="bokboardTable">
+                <thead>
+                    <tr>
+                        <th>Datum</th>
+                        <th>Avgång</th>
+                        <th>Ankost</th>
+                        <th>Restid</th>
+                        <th>Pris</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            21 Jan
+                        </td>
+                        <td>
+                            ca:13:15
+                        </td>
+                        <td>
+                            ca:14:25
+                        </td>
+                        <td>
+                            1h 10min
+                        </td>
+                        <td>
+                            120kr
+                        </td>
+                        <td>
+                            <button class="bokboardTableButton">Omboka</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer class="flexbox flex-justify-space-evenly">
+        <div class=" logoPitch flexbox flex-direction-row">
+            <img class="logo" src="./Assets/logo.png">
+            <div class="pitch">
+                <p>Hos oss kan du boka färdtjänstresor & sjukresor.</p>
+            </div>
+        </div>
+        <div class="footerMiddleDiv flexbox flex-direction-column flex-align-i-center">
+            <h3>Kontakta oss</h3>
+            <div class="flexbox flex-align-i-center flex-justify-space-around">
+                <img src="./Assets/icons8-ringer-volume-50.png">
+                <a href="">046 333 222</a>
+            </div>
+            <div class="flexbox flex-align-i-center flex-justify-space-around">
+                <img src="./Assets/icons8-mail-50.png">
+                <a href="">iter@färdtjänst.se</a>
+            </div>
+        </div>
+        <div class=" maxWidth footerMiddleDiv flexbox flex-direction-column flex-align-i-center">
+            <h3>Postadress</h3>
+            <div class="flexbox flex-align-i-center flex-justify-space-around">
+                <img src="./Assets/icons8-home-50.png">
+                <a href="">iter färdtjänst. Clemenstorget 24C. 222 70 Lund</a>
+            </div>
+        </div>
+        <div class="footerMiddleDiv flexbox flex-direction-column flex-align-i-center">
+            <h3>Länkar</h3>
+            <a href="">Logga ut</a>
+            <a href="">Se instruktionsvideo</a>
+            <a href="">Ljudinspelning</a>
+        </div>
+        <div class="footerMiddleDiv flexbox flex-align-i-center">
+
+            <h3 class="flex-justify-center">Socialamedier</h3>
+            <div class="socialMediaIcon flexbox flex-direction-row">
+                <a href="https://www.facebook.com/"><img
+                        src="./Assets/iconfinder_1_Facebook2_colored_svg_5296500.png"></a>
+                <a href="https://www.linkedin.com/"><img
+                        src="./Assets/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png"></a>
+                <a href="https://www.pinterest.com/"><img
+                        src="./Assets/iconfinder_1_Pinterest_colored_svg_5296503.png"></a>
+                <a href="https://www.twitter.com/"><img
+                        src="./Assets/iconfinder_1_Twitter3_colored_svg_5296516.png"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

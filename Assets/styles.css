@@ -1,0 +1,641 @@
+@import url('./normalize-browser.css');
+@import url('./flexbox-style-template.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,900;1,100;1,300;1,500;1,600;1,900&family=Playfair+Display:ital,wght@0,400;0,800;0,900;1,400;1,500;1,600;1,900&display=swap');
+/*** Projekt webbanvändbarehet by Cristina Löfqvist Mid Sweden university Jan 2021 ***/
+
+body {
+    background-color: #f7f2e1;
+    width: 100%;
+}
+
+h3, label, button, li {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 600px;
+    line-height: 150%;
+}
+
+footer h1, footer h2, footer h3, footer h4 {
+    color: #707070;
+}
+
+.logo {
+    max-width: 85px;
+    max-height: 85px;
+}
+
+h1, h2, h4, h5, h6, .pitch, .pitch p {
+    font-family: 'Playfair Display', serif;
+}
+
+#fontII {
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+}
+
+p, a {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 600px;
+    line-height: 150%;
+}
+
+.logotype {
+    height: fit-content;
+}
+
+.pitch {
+    max-width: 164px;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.logoPitch {
+    width: fit-content;
+    height: fit-content;
+}
+
+.logoPitch img {
+    padding: 20px;
+}
+
+header, footer {
+    background-color: white;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.mainNav a {
+    background-color: #EC6137;
+    color: #FEFCF6;
+    padding: 0.6em;
+    border-radius: 15px 5px 0px 0px;
+}
+
+.mainNav a:link {
+    text-decoration: none;
+}
+
+.mainNav a:hover {
+    border-style: solid;
+    border-color: #EC6137;
+    background-color: #FEFCF6;
+    color: black;
+}
+
+nav .Lighter a {
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 0px solid;
+    border-color: #E4E4E4;
+    background-color: #f7f2e1;
+    color: black;
+}
+
+.Lighter a:hover {
+    background-color: #E4E4E4;
+    color: black;
+    border-style: none;
+}
+
+.rightHeader img {
+    padding-left: 2em;
+}
+
+#firtsMainImg {
+    max-width: 295px;
+    max-height: 295px;
+    float: right;
+}
+
+.maxWidth {
+    max-width: 180px;
+}
+
+main {
+    margin: 5em;
+    margin-top: 7em;
+}
+
+.mainFirstPage p {
+    max-width: 550px;
+}
+
+.socialMediaIcon img {
+    padding: 0.6em;
+    height: 45px;
+    width: auto;
+}
+
+/*Style forcolored links in main homepage*/
+
+#blue {
+    background: rgba(204, 225, 224, 0.8);
+    width: 234px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+#green {
+    background: rgba(83, 94, 99, 0.8);
+    width: 234px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+    color: white;
+}
+
+#pink {
+    background: rgba(247, 193, 189, 0.8);
+    width: 234px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+   
+}
+
+#purple {
+    background: rgba(89, 60, 93, 0.8);
+    width: 234px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    color: white;
+}
+
+#orange {
+    background: rgba(236, 97, 55, 0.8);
+    width: 234px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+#orange:hover {
+    background: rgba(236, 97, 55, 1.0);
+} 
+#green:hover{
+    background: rgba(83, 94, 99, 1.0);
+} 
+#purple:hover{
+    background: rgba(89, 60, 93, 1.0);
+}
+#pink:hover {
+    background: rgba(247, 193, 189, 1.0);
+}
+
+
+#blue:hover {
+    background: rgba(204, 225, 224, 1.0);
+}
+
+#orange a, #purple a, #green a {
+    color: white;
+}
+
+.coloredLinks a {
+    font-size: 20;
+    font-weight: 500;
+    max-width: 150px;
+    text-align: center;
+}
+
+.coloredLinks a:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.coloredLinks {
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.loginMain {
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 7%;
+}
+
+form input {
+    margin-bottom: 1.8em;
+    padding: 0.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    font-size: 90%;
+}
+
+.loginButton {
+    background-color: #EC6137;
+    color: white;
+    max-width: 100px;
+    max-height: auto;
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 1px solid #c1bebb;
+}
+
+button:hover, .loginButton:hover {
+    background-color: white;
+    color: #EC6137;
+    cursor: pointer;
+}
+
+button:focus, .loginButton:focus {
+    background-color: #c1bebb;
+    cursor: pointer;
+}
+
+.infoDiv {
+    border-top: 1px solid;
+    color: black;
+    padding-top: 20px;
+}
+
+.infoBox {
+    border: 2px solid #c1bebb;
+    padding: 1em;
+    margin: 0.6em;
+    max-width: 333px;
+    font-size: 14px;
+}
+
+.extrapadd {
+    padding-top: 12%;
+}
+
+.infoBox img {
+    margin-left: 40%;
+}
+
+.aboutDiv {
+    margin-top: 3em;
+}
+
+ol li {
+    line-height: 150%;
+}
+
+.source {
+    color: grey;
+    font-size: 12px;
+}
+
+.infopageTopmain {
+    margin-bottom: 5%;
+}
+
+.arrow {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.depatrButton {
+    padding: 13px 10px;
+    background-color: #fff;
+    border: 1px solid #c1bebb;
+    color: #6e6055;
+    border-radius: 4px;
+}
+
+fieldset {
+    border: 0;
+}
+
+label, input {
+    padding: 0.5em;
+    color: black;
+    border: 1px solid #c1bebb;
+}
+
+.time {
+    padding: 0.5em;
+    color: black;
+}
+
+label {
+    background-color: #E4E4E4;
+}
+
+input {
+    background-color: #FFFFFF;
+}
+
+input ::placeholder {
+    color: #E4E4E4;
+    font-family: 'Playfair Display', serif;
+}
+
+.inputWrapper {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+}
+
+.bokLabel {
+    float: left;
+    height: 18px;
+}
+
+.controls {
+    margin-left: 0px;
+}
+
+.tmeselect-container {
+    margin-left: 1.5em;
+}
+
+.selectWrapper {
+    margin: 2em;
+    border-radius: 4px;
+    color: black;
+}
+
+.selectWrapper label {
+    height: 19px;
+}
+
+#quantity {
+    max-width: 50px;
+}
+
+.no-style {
+    border-style: none;
+    background-color: #f7f2e1;
+}
+
+.infoP {
+    font-size: 14px;
+    padding-top: 5%;
+}
+
+.infoicon {
+    padding: 0.5em;
+}
+
+.bokboardTable {
+    border: 1px solid #c1bebb;
+}
+
+.bokboardTable {
+    background-color: #FFFFFF;
+    border: 1px solid #c1bebb;
+    padding: 1em;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bokboardTable th, .bokboardTable td {
+    padding: 20px;
+}
+
+.bokboardTableButton {
+    border-radius: 45px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px #c1bebb;
+}
+
+.bokboardTableButton:hover {
+    background-color: #EB6036;
+    color: #FFFFFF;
+}
+
+/*flex grid structure*/
+
+.flexGridContainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px, auto, 200px;
+    height: 100%;
+    grid-template-areas: "h h h h h h h h h h h h" "m m m m m m m m m m m m" "f f f f f f f f f f f f";
+}
+
+header {
+    grid-area: h;
+    padding-left: 1em;
+}
+
+.rightHeader {
+    padding-right: 2em;
+    padding-top: 2em;
+}
+
+#maincontent {
+    grid-area: m;
+}
+
+footer {
+    grid-area: f;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footerMiddleDiv img {
+    max-height: 35px;
+    max-width: 35px;
+}
+
+.extras {
+    background-color: #FFFFFF;
+}
+
+
+/*mobile screens*/
+
+@media only screen and (max-width:500px) {
+    header {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .socialMediaIcon {
+        flex-direction: column;
+    }
+    .firstPageMain, .mainFirstPage {
+        display: flex;
+        flex-direction: column;
+    }
+    .coloredLinks {
+        flex-direction: column;
+        align-items: center;
+    }
+    .infoBoxWrapper {
+        flex-direction: column;
+    }
+    .alternativContainer {
+        border: 2px solid #c1bebb;
+        margin: 2em;
+        padding: 2em;
+    }
+
+    .extras {
+        flex-direction: column;
+    }
+    .fellow {
+        padding:20px;
+    }
+
+
+}
+
+/*tablet screen size*/
+
+@media only screen and (min-width: 501px) and (max-width:799px) {
+    header {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstPageMain, .mainFirstPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #burgerMenu {
+        height: 40px;
+        width: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 1001;
+        padding: 5px;
+    }
+    #burgerMenu:hover {
+        cursor: pointer;
+    }
+    .burgerBun {
+        height: 4px;
+        width: 100%;
+        background: black;
+        border-radius: 3px;
+        transition: all 0.3s linear;
+        position: relative;
+        transform-origin: 1px;
+        z-index: 1001;
+    }
+    #mainNav {
+        transition: transform 0.3s ease-in-out;
+        width: 300px;
+        z-index: 2;
+    }
+    .coloredLinks {
+        flex-direction: column;
+    }
+    .infoBoxWrapper {
+        flex-direction: column;
+    }
+    .alternativContainer {
+        border: 2px solid #c1bebb;
+        margin: 2em;
+        padding: 2em;
+    }
+    .fellow {
+        padding:20px;
+    }
+
+
+    .extras {
+        flex-direction: column;
+    }
+    #mainimg{
+        width:100%;
+        height:auto;
+    }
+}
+
+/*Large screens*/
+
+@media only screen and (min-width: 800px) {
+    .footerMiddleDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        flex-direction: row;
+    }
+    .coloredLinks {
+        flex-direction: row;
+    }
+    .flexwrapperArticle {
+        display: flex;
+        flex-direction: row;
+    }
+    .aboutDiv {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .aboutDiv article {
+        margin-left: 20%;
+    }
+    .infoBoxWrapper {
+        flex-direction: row;
+    }
+    .alternativContainer {
+        border: 2px solid #c1bebb;
+        margin: 2em;
+        padding: 2em;
+        width: 40%;
+    }
+    .somepadding {
+        margin-right: 1em;
+    }
+    .fellow {
+        margin-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-top:8px;
+    }
+    
+    .dog {
+        padding-right: 50px;
+        padding-bottom:20px;
+    }
+    .extras {
+        flex-direction: row;
+    }
+
+    .mainFirstPage {
+        padding-left: 3em;
+        font-size: 120%;
+        margin-top: 4em;
+    }
+
+}

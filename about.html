@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <!--*** Projekt webbanvändbarehet by Cristina Löfqvist Mid Sweden university Jan 2021 ***-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Assets/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    <title>Projekt färdtjänst</title>
+</head>
+
+<body onresize="toggleOpen('burgerMenu','mainNav', 'flex' )">
+    <header class="flexbox flex-justify-space-between">
+        <div class="logoPitch flexbox">
+            <a href="index.html" class="logotype"><img src='./Assets/logo.png' alt="logotype" /></a>
+            <p class="pitch">Vi finns för att ge dig
+                bästa möjliga
+                service.</p>
+        </div>
+        <div class="flexbox flex-direction-column flex-justify-flex-end">
+        <nav class="mainNav" id="mainNav">
+           <a href="index.html">Start</a>
+            <a href="login.html">Logga in</a>
+            <span class="Lighter"><a href="about.html">Om färdtjänst</a></span>
+            <a href="info.html">Info</a>
+        </nav>
+    </div>
+        <!--Burger meny toggles open when window resize-->
+        <div id="burgerMenu" onclick="toggleOpen('burgerMenu','mainNav','flex')">
+            <div class="burgerBun"></div>
+            <div class="burgerBun"></div>
+            <div class="burgerBun"></div>
+        </div>
+
+        <div class="rightHeader">
+            <img src="./Assets/icons8-sound-50.png" alt="icon of speaker">
+            <img src="./Assets/icons8-great-britain-48.png" alt="flag of great britain">
+            <img src="./Assets/search.png" alt="searchicon">
+        </div>
+    </header>
+    <main>
+        <div class="flexbox flex-direction-column flex-align-i-center">
+            <img src="./Assets/returningcars.png" alt="icon of cars" />
+            <h1>Om färdtjänst</h1>
+            <hr>
+        </div>
+        <div class="aboutDiv">
+            <img src="./Assets/elijah-m-henderson-DMED-sOt1Ak-unsplash.jpg" alt="phtograph ofroad in fall">
+            <div>
+                <article>
+                    <div class="flexwrapperArticle">
+                        <img src="./Assets/icons8-people-in-car-side-view-50.png" alt="icon of car"/>
+                        <h3>Vad är färdtjänst?</h3>
+                    </div>
+                    <p>Färdtjänst ingår i kollektivtrafiken. Det innebär att du
+                        reser med kollektivtrafik som alla andra men med service och färdmedel
+                        som är anpassad efter dina behov.
+                        Sjukresor är resor mellan hemmet och vård och behandlings platsen. </p>
+                </article>
+                <article>
+                    <div class="flexwrapperArticle">
+                        <img src="./Assets/disabled-people.png" alt="icon of person in wheelechair"/>
+                        <h3>Vad är färdtjänst?</h3>
+                    </div>
+                    <p>Om du har särskilda behov som gör att du inte kan
+                        använda dig av den vanliga kollektivtrafiken kan du
+                        ha rätt att begära färdtjänst. Du behöver ansöka om
+                        intyg för att få rätt till färdtjänst och sjukresor.
+                        Du kan läsa mer om rätten till färdtjänst, sjukresor
+                        och hur du ansöker
+                        om intyg här:
+                    </p>
+                </article>
+            </div>
+        </div>
+        <div class="flexbox flex-direction-column flex-align-i-center">
+            <img src="./Assets/icons8-news-50.png" alt="icon of certificat"/>
+            <h1>Om intyg</h1>
+            <span><hr></span>
+        </div>
+        <div class="flexbox flex-direction-row flexbox flex-align-i-center flex-justify-space-around infoDiv">
+            <img class="infoicon" src="./Assets/icons8-info-50.png" alt="icon of info"/>
+            <h2>Information</h2>
+        </div>
+        <p class="flexbox flex-direction-column flexbox flex-align-i-center flex-justify-space-around"> Rätten till
+            färdtjänst grundar sig i färdtjänstlagen.
+            För att få rätt till färdtjänst krävs att du är folkbokförd i
+            kommunen du ansöker hos. Det krävs också att du har väsentliga
+            svårigheter att förflyttad dig på egen hand eller med den vanliga
+            kollektivtrafiken. Du måste också ha en funktionsnedsättning som
+            vara i längre än tre månader. För att få intyg om rätt till färdtjänst
+            eller sjukresor krävs att du har läkarintyg som styrker detta.
+        </p>
+
+
+        <div class="flexbox flex-direction-row  flex-align-i-center flex-justify-space-around infoDiv">
+            <img class="infoicon" src="./Assets/icons8-news-50.png" alt="icon of certificat" />
+            <h2>Hur man ansöker om intyg</h2>
+        </div>
+        <ol class="flexbox flex-direction-column flexbox flex-align-i-center flex-justify-space-around">
+            <li>Ta kontakt med din läkare eller vårdcentral och tala om att du behöver ett läkarintyg för ansökan
+                om färdtjänst intyg. Det ska framgå i intyget en beskrivning av din funktionsnedsättning.</li>
+            <br>
+            <li>Fyll i och skicka in blanketten Ansökan om färdtjänst som finns på din hemkommuns webbplats:
+                https://www.lund.se/#/
+                Glöm inte att bifoga ditt läkarintyg som beskriver din funktionsnedsättning. </li>
+            <li>Skicka in blanketten till stadsdelsförvaltningen i den kommun där du är folkbokförd. </li>
+            <br>
+            <li>En utredare på stadsdelsförvaltningen tar kontakt med dig och ni bokar in ett möte. </li>
+            <br>
+            <li>Utredaren skickar vidare undelaget till Trafikförvaltningen som tar beslut i ditt ärende och
+                skickar beslutet hem till dig.
+            </li>
+        </ol>
+        <p class="source">Källa: https://fardtjansten.sll.se/sv/info/fardtjanstresor/ansok1/ansok/</p>
+
+    </main>
+    <footer class="flexbox flex-justify-space-evenly">
+        <div class=" logoPitch flexbox flex-direction-row">
+            <img class="logo" src="./Assets/logo.png" alt="logotype">
+            <div class="pitch">
+                <p>Hos oss kan du boka färdtjänstresor & sjukresor.</p>
+            </div>
+        </div>
+        <div class="footerMiddleDiv flexbox flex-direction-column flex-align-i-center">
+            <h3>Kontakta oss</h3>
+            <div class="flexbox flex-align-i-center flex-justify-space-around">
+                <img src="./Assets/icons8-ringer-volume-50.png" alt="icon of phone">
+                <a href="">046 333 222</a>
+            </div>
+            <div class="flexbox flex-align-i-center flex-justify-space-around">
+                <img src="./Assets/icons8-mail-50.png" alt="icon of mail">
+                <a href="">iter@färdtjänst.se</a>
+            </div>
+        </div>
+        <div class=" maxWidth footerMiddleDiv flexbox flex-direction-column flex-align-i-center">
+            <h3>Postadress</h3>
+            <div class="flexbox flex-align-i-center flex-justify-space-around">
+                <img src="./Assets/icons8-home-50.png" alt="icon of house">
+                <a href="">iter färdtjänst. Clemenstorget 24C. 222 70 Lund</a>
+            </div>
+        </div>
+        <div class="footerMiddleDiv flexbox flex-direction-column flex-align-i-center">
+            <h3>Länkar</h3>
+            <a href="login.html">Logga in</a>
+            <a href="about.html">Se instruktionsvideo</a>
+            <a href="info.html">Ljudinspelning</a>
+        </div>
+        <div class="footerMiddleDiv flexbox flex-align-i-center">
+            
+                <h3 class="flex-justify-center">Socialamedier</h3>
+                <div class="socialMediaIcon flexbox flex-direction-row">
+                <a href="https://www.facebook.com/"><img
+                        src="./Assets/iconfinder_1_Facebook2_colored_svg_5296500.png" alt="facebookicon"></a>
+                <a href="https://www.linkedin.com/"><img
+                        src="./Assets/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png" alt="linkedin icon"></a>
+                <a href="https://www.pinterest.com/"><img
+                        src="./Assets/iconfinder_1_Pinterest_colored_svg_5296503.png" alt="pinterest icon"></a>
+                <a href="https://www.twitter.com/"><img
+                        src="./Assets/iconfinder_1_Twitter3_colored_svg_5296516.png" alt="twitter icon"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

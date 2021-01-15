@@ -140,6 +140,11 @@ main {
     width: auto;
 }
 
+.icon {
+    width: 60px;
+    height:60px;
+}
+
 /*Style forcolored links in main homepage*/
 
 #blue {

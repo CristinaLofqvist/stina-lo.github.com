@@ -322,8 +322,8 @@ ol li {
 }
 
 .arrow {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .depatrButton {
@@ -617,7 +617,7 @@ footer {
         border: 2px solid #c1bebb;
         margin: 2em;
         padding: 2em;
-        width: 40%;
+
     }
     .somepadding {
         margin-right: 1em;

@@ -1,8 +1,12 @@
 var open = 0;
-function toggleOpen(burgerId, elementId, displayValue) {
+function toggleOpen(burgerId, elementId, onResize) {
     var htmlElement = document.getElementById(elementId);
-    var burgerBun = document.getElementById(burgerId).children;
-    if (open !== 0) {
+    var burger = document.getElementById(burgerId)
+    if (!htmlElement || !burger)
+        return
+    var burgerBun = burger.children;
+
+    if (open) {
         for (let i = 0; i < burgerBun.length; i++) {
             if (i == 0) {
                 burgerBun[i].style.transform = "rotate(0)";
@@ -13,7 +17,7 @@ function toggleOpen(burgerId, elementId, displayValue) {
                 burgerBun[i].style.transform = "rotate(0)";
             }
         }
-        htmlElement.style.transform = "translateX(-100%)";
+        htmlElement.style.opacity = "0"
         open = 0;
     } else {
 
@@ -27,18 +31,21 @@ function toggleOpen(burgerId, elementId, displayValue) {
                 burgerBun[i].style.transform = "rotate(-45deg)";
             }
         }
-        htmlElement.style.transform = "translateX(0)";
+        htmlElement.style.opacity = "1";
         open = 1;
     }
 }
 
-/*target html element logo with jquery, display a smaller image when smaller window*/ 
+/*target html element logo with jquery, display a smaller image when smaller window*/
 
 function resize() {
     if ($(window).width() < 799) {
-        $(".logotype img").attr("src","./Assets/smallerLogo.png");
+        $(".logotype img").attr("src", "./Assets/smallerLogo.png");
+        toggleOpen("burgerMenu", "mainNav", true)
+        $(".mainNav").attr("style", "opacity: 0;")
     } else {
-        $(".logotype img").attr("src","./Assets/logo.png");
+        $(".logotype img").attr("src", "./Assets/logo.png");
+        $(".mainNav").attr("style", "opacity: 1;")
     }
 }
 resize();

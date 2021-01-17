@@ -11,46 +11,46 @@
     <title>Projekt färdtjänst</title>
 </head>
 
-<body onresize="toggleOpen('burgerMenu','mainNav', 'flex' )">
+<body>
     <header class="flexbox flex-justify-space-between">
-        <div class="logoPitch flexbox">
-            <a href="index.html" class="logotype"><img src='./Assets/logo.png' alt="logotype" /></a>
-            <p class="pitch">Vi finns för att ge dig
-                bästa möjliga
-                service.</p>
+        <div class="flexbox flex-align-i-center flex-direction-row flex-justify-space-between w-100">
+            <div class="logoPitch flexbox">
+                <a href="index.html" class="logotype"><img src='./Assets/logo.png' alt="logotype" /></a>
+                <p class="pitch">Vi finns för att ge dig
+                    bästa möjliga
+                    service.</p>
+            </div>
+            <!--Burger meny toggles open when window resize-->
+
+
+            <div class="rightHeader flexbox flex-direction-row flex-justify-space-around flex-align-i-center">
+                <img src="./Assets/icons8-sound-50.png" alt="icon of speaker">
+                <img src="./Assets/icons8-great-britain-48.png" alt="flag of great britain">
+
+                <div class="flexbox flex-direction-column flex-align-i-center">
+                    <img class="searchIcon" src="./Assets/search.png" alt="searchicon">
+                    <span class="search">Sök</span>
+                </div>
+            </div>
         </div>
-        <div class="flexbox flex-direction-column flex-justify-flex-end">
+        <div id="burgerMenu" onclick="toggleOpen('burgerMenu','mainNav')">
+            <div class="burgerBun"></div>
+            <div class="burgerBun"></div>
+            <div class="burgerBun"></div>
+        </div>
+        <div class="flexbox flex-direction-column flex-align-i-center w-100">
             <nav class="mainNav" id="mainNav">
                 <a href="index.html">Start</a>
                 <a href="login.html">Logga in</a>
-                <span class="Lighter"><a href="about.html">Om färdtjänst</a></span>
+                <a class="Lighter"  href="about.html">Om färdtjänst</a>
                 <a href="info.html">Info</a>
             </nav>
-        </div>
-        <!--Burger meny toggles open when window resize-->
-        <div id="burgerMenu" onclick="toggleOpen('burgerMenu','mainNav','flex')">
-            <div class="burgerBun"></div>
-            <div class="burgerBun"></div>
-            <div class="burgerBun"></div>
-        </div>
-
-        <div class="rightHeader flexbox flex-direction-row flex-justify-space-around flex-align-i-center">
-            <img src="./Assets/icons8-sound-50.png" alt="icon of speaker">
-            <img src="./Assets/icons8-great-britain-48.png" alt="flag of great britain">
-
-            <div class="flexbox flex-direction-column flex-align-i-center">
-                <img class="searchIcon" src="./Assets/search.png" alt="searchicon">
-                <span class="search">Sök</span>
-            </div>
         </div>
     </header>
     <main>
         <div class="flexbox flex-direction-column flex-align-i-center">
             <img src="./Assets/returningcars.png" alt="icon of cars" />
             <h1>Om färdtjänst</h1>
-            <span>
-                <hr>
-            </span>
         </div>
         <div class="aboutDiv">
             <img src="./Assets/elijah-m-henderson-DMED-sOt1Ak-unsplash.jpg" alt="phtograph ofroad in fall">
@@ -98,8 +98,6 @@
             <div class="flexbox flex-direction-row flex-align-i-center">
                 <h1>Om intyg</h1>
             </div>
-            <span>
-                <hr></span>
         </div>
         <div class="flexbox flex-direction-column flex-align-i-center flex-justify-space-around">
             <div class="flexbox flex-direction-row flex-align-i-center">
@@ -107,17 +105,17 @@
                 <img class="infoicon" src="./Assets/icons8-news-50.png" alt="icon of certificat" />
                 <h2>Hur man ansöker om intyg</h2>
             </div>
-            <ol class="flexbox flex-direction-column flexbox flex-align-i-center flex-justify-space-around">
+            <ol class="flexbox flex-direction-column flexbox flex-align-i-center flex-justify-space-around paddingBottom">
                 <li>Ta kontakt med din läkare eller vårdcentral och tala om att du behöver ett läkarintyg för ansökan
                     om färdtjänst intyg. Det ska framgå i intyget en beskrivning av din funktionsnedsättning.</li>
-                <br>
+            
                 <li>Fyll i och skicka in blanketten Ansökan om färdtjänst som finns på din hemkommuns webbplats:
                     https://www.lund.se/#/
                     Glöm inte att bifoga ditt läkarintyg som beskriver din funktionsnedsättning. </li>
                 <li>Skicka in blanketten till stadsdelsförvaltningen i den kommun där du är folkbokförd. </li>
-                <br>
+        
                 <li>En utredare på stadsdelsförvaltningen tar kontakt med dig och ni bokar in ett möte. </li>
-                <br>
+            
                 <li>Utredaren skickar vidare undelaget till Trafikförvaltningen som tar beslut i ditt ärende och
                     skickar beslutet hem till dig.
                 </li>

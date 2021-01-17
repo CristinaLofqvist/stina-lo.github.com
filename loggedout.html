@@ -11,37 +11,41 @@
     <title>Projekt färdtjänst</title>
 </head>
 
-<body onresize="toggleOpen('burgerMenu','mainNav', 'flex' )">
+<body>
     <header class="flexbox flex-justify-space-between">
-        <div class="logoPitch flexbox">
-            <a href="index.html" class="logotype"><img src='./Assets/logo.png' alt="logotype" /></a>
-            <p class="pitch">Vi finns för att ge dig
-                bästa möjliga
-                service.</p>
+        <div class="flexbox flex-align-i-center flex-direction-row flex-justify-space-between w-100">
+            <div class="logoPitch flexbox">
+                <a href="index.html" class="logotype"><img src='./Assets/logo.png' alt="logotype" /></a>
+                <p class="pitch">Vi finns för att ge dig
+                    bästa möjliga
+                    service.</p>
+            </div>
+            <!--Burger meny toggles open when window resize-->
+
+
+            <div class="rightHeader flexbox flex-direction-row flex-justify-space-around flex-align-i-center">
+                <img src="./Assets/icons8-sound-50.png" alt="icon of speaker">
+                <img src="./Assets/icons8-great-britain-48.png" alt="flag of great britain">
+
+                <div class="flexbox flex-direction-column flex-align-i-center">
+                    <img class="searchIcon" src="./Assets/search.png" alt="searchicon">
+                    <span class="search">Sök</span>
+                </div>
+            </div>
         </div>
-        <div class="flexbox flex-direction-column flex-justify-flex-end">
-            <nav class="mainNav" id="mainNav">
-                <a href="index.html">Start</a>
-              <a href="login.html">Logga in</a>
+        <div id="burgerMenu" onclick="toggleOpen('burgerMenu','mainNav')">
+            <div class="burgerBun"></div>
+            <div class="burgerBun"></div>
+            <div class="burgerBun"></div>
+        </div>
+        <div class="flexbox flex-direction-column flex-align-i-center w-100">
+            <nav class="mainNav " id="mainNav">
+                <a    href="index.html">Start</a>
+                <a   href="login.html">Logga in</a>
+                <a class="Lighter" href="loggedout.html">Logga ut</a>
                 <a href="about.html">Om färdtjänst</a>
                 <a href="info.html">Info</a>
             </nav>
-        </div>
-        <!--Burger meny toggles open when window resize-->
-        <div id="burgerMenu" onclick="toggleOpen('burgerMenu','mainNav','flex')">
-            <div class="burgerBun"></div>
-            <div class="burgerBun"></div>
-            <div class="burgerBun"></div>
-        </div>
-
-        <div class="rightHeader flexbox flex-direction-row flex-justify-space-around flex-align-i-center">
-                <img src="./Assets/icons8-sound-50.png" alt="icon of speaker">
-                <img src="./Assets/icons8-great-britain-48.png" alt="flag of great britain">
-         
-            <div class="flexbox flex-direction-column flex-align-i-center">
-                <img class="searchIcon" src="./Assets/search.png" alt="searchicon">
-                <span class="search">Sök</span>
-            </div>
         </div>
     </header>
     <main class="flexbox flex-justify-space-around loginMain">

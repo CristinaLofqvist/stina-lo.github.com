@@ -30,9 +30,10 @@ h1, h2, h4, h5, h6, .pitch, .pitch p {
 #fontII, .search {
     font-family: 'Montserrat', sans-serif;
 }
+
 .search {
     font-size: 12px;
-    padding:3px;
+    padding: 3px;
 }
 
 p, a {
@@ -83,8 +84,18 @@ header, footer {
 .mainNav a {
     background-color: #EC6137;
     color: #FEFCF6;
+    border-style: solid;
+    border-color: #EC6138;
     padding: 0.6em;
     border-radius: 15px 5px 0px 0px;
+    margin-left: 5px;
+}
+.mainNav a:last-child{
+    margin-right: 5px;
+}
+.mainNav {
+    display: flex;
+    flex-direction: row;
 }
 
 .mainNav a:link {
@@ -92,13 +103,12 @@ header, footer {
 }
 
 .mainNav a:hover {
-    border-style: solid;
-    border-color: #EC6137;
+
     background-color: #FEFCF6;
     color: black;
 }
 
-nav .Lighter a {
+nav .Lighter {
     border-top: 2px solid;
     border-left: 2px solid;
     border-right: 2px solid;
@@ -108,12 +118,11 @@ nav .Lighter a {
     color: black;
 }
 
-.Lighter a:hover {
+.Lighter:hover {
     background-color: #E4E4E4;
     color: black;
     border-style: none;
 }
-
 
 #firtsMainImg {
     max-width: 295px;
@@ -142,7 +151,7 @@ main {
 
 .icon {
     width: 45px;
-    height:45px;
+    height: 45px;
 }
 
 /*Style forcolored links in main homepage*/
@@ -179,7 +188,6 @@ main {
     align-items: center;
     justify-content: center;
     margin: 2em;
-   
 }
 
 #purple {
@@ -207,17 +215,19 @@ main {
 
 #orange:hover {
     background: rgba(236, 97, 55, 1.0);
-} 
-#green:hover{
+}
+
+#green:hover {
     background: rgba(83, 94, 99, 1.0);
-} 
-#purple:hover{
+}
+
+#purple:hover {
     background: rgba(89, 60, 93, 1.0);
 }
+
 #pink:hover {
     background: rgba(247, 193, 189, 1.0);
 }
-
 
 #blue:hover {
     background: rgba(204, 225, 224, 1.0);
@@ -228,7 +238,7 @@ main {
 }
 
 .coloredLinks a {
-    font-size: 20;
+    font-size: 20px;
     font-weight: 500;
     max-width: 150px;
     text-align: center;
@@ -265,7 +275,7 @@ form input {
     background-color: #EC6137;
     color: white;
     max-width: 100px;
-    max-height: auto;
+    height: auto;
     padding: 0.5em;
     margin: 0.5em;
     border: 1px solid #c1bebb;
@@ -315,6 +325,7 @@ ol li {
 .source {
     color: grey;
     font-size: 12px;
+    overflow-wrap: anywhere;
 }
 
 .infopageTopmain {
@@ -362,12 +373,6 @@ input ::placeholder {
     font-family: 'Playfair Display', serif;
 }
 
-.inputWrapper {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    text-overflow: ellipsis;
-}
 
 .bokLabel {
     float: left;
@@ -412,6 +417,7 @@ input ::placeholder {
 
 .bokboardTable {
     border: 1px solid #c1bebb;
+    width: 100%;
 }
 
 .bokboardTable {
@@ -431,6 +437,11 @@ input ::placeholder {
     padding: 10px;
     background-color: #FFFFFF;
     box-shadow: 1px 2px #c1bebb;
+    display: flex;
+    align-items: center;
+}
+.paddingBottom li{
+    padding-bottom: 20px;
 }
 
 .bokboardTableButton:hover {
@@ -438,30 +449,19 @@ input ::placeholder {
     color: #FFFFFF;
 }
 
-.zoom img{
-    height: 45px;
-    width: 45px;
-    transition: 2s;
-    
-}
-.zoom img:hover {
-    scale:(1.5);
-    cursor: pointer;
-}
 
 /*flex grid structure*/
 
 .flexGridContainer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px, auto, 200px;
+    grid-template-rows: 200px  auto  200px;
     height: 100%;
     grid-template-areas: "h h h h h h h h h h h h" "m m m m m m m m m m m m" "f f f f f f f f f f f f";
 }
 
 header {
     grid-area: h;
-    padding-left: 1em;
 }
 
 .rightHeader {
@@ -492,18 +492,37 @@ footer {
     margin-top: 50px;
 }
 
+#roadImg {
+    width: 300px;
+    height: 225px;
+}
+
 /*mobile screens*/
 
 @media only screen and (max-width:500px) {
+    .mainNav{
+        opacity: 0;
+        font-size: 50%;
+    }
+    main {
+        padding: 50px;
+        margin-top: 0px;
+        margin: 0px;
+    }
     header {
         flex-direction: column;
+        align-items: center;
+    }
+    header:nth-child(4) {
+        order: -1;
     }
     footer {
         flex-direction: column;
         align-items: center;
     }
-    .socialMediaIcon {
-        flex-direction: column;
+    .footerMiddleDiv {
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .firstPageMain, .mainFirstPage {
         display: flex;
@@ -521,26 +540,57 @@ footer {
         margin: 2em;
         padding: 2em;
     }
-
     .extras {
         flex-direction: column;
     }
     .fellow {
-        padding:20px;
+        padding: 20px;
     }
-
-
+    .infopageTopmain {
+        flex-direction: column;
+        align-items: center;
+    }
+    #burgerMenu {
+        height: 40px;
+        width: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 1001;
+        padding: 5px;
+    }
+    #burgerMenu:hover {
+        cursor: pointer;
+    }
+    .burgerBun {
+        height: 4px;
+        width: 100%;
+        background: black;
+        border-radius: 3px;
+        transition: all 0.3s linear;
+        position: relative;
+        transform-origin: 1px;
+        z-index: 1001;
+    }
+    .mainImgWrapper {
+        width:100%;
+    }
 }
 
-#mainimg{
-    width:100%;
-    height:auto;
+#mainimg {
+    width: 100%;
+    height: auto;
 }
+
 /*tablet screen size*/
 
 @media only screen and (min-width: 501px) and (max-width:799px) {
+    .mainNav {
+        opacity: 0;
+    }
     header {
         flex-direction: column;
+        align-items: center;
     }
     footer {
         flex-direction: column;
@@ -575,7 +625,6 @@ footer {
     }
     #mainNav {
         transition: transform 0.3s ease-in-out;
-        width: 300px;
         z-index: 2;
     }
     .coloredLinks {
@@ -591,14 +640,14 @@ footer {
         padding: 2em;
     }
     .fellow {
-        padding:20px;
+        padding: 20px;
     }
-
-
     .extras {
         flex-direction: column;
     }
-
+    .mainImgWrapper {
+        width:50%;
+    }
 }
 
 /*Large screens*/
@@ -633,7 +682,6 @@ footer {
         border: 2px solid #c1bebb;
         margin: 2em;
         padding: 2em;
-
     }
     .somepadding {
         margin-right: 1em;
@@ -642,21 +690,26 @@ footer {
         margin-bottom: 40px;
         padding-left: 40px;
         padding-right: 20px;
-        padding-top:8px;
+        padding-top: 8px;
     }
-    
     .dog {
         padding-right: 50px;
-        padding-bottom:20px;
+        padding-bottom: 20px;
     }
     .extras {
         flex-direction: row;
     }
-
     .mainFirstPage {
         padding-left: 3em;
         font-size: 120%;
         margin-top: 2em;
     }
-
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainImgWrapper {
+        width:50%;
+    }
 }
+

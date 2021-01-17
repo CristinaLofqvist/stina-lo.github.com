@@ -27,9 +27,12 @@ h1, h2, h4, h5, h6, .pitch, .pitch p {
     font-family: 'Playfair Display', serif;
 }
 
-#fontII {
+#fontII, .search {
     font-family: 'Montserrat', sans-serif;
-    font-style: bold;
+}
+.search {
+    font-size: 12px;
+    padding:3px;
 }
 
 p, a {
@@ -54,7 +57,7 @@ p, a {
 }
 
 .logoPitch img {
-    padding: 20px;
+    padding: 10px;
 }
 
 header, footer {
@@ -111,9 +114,6 @@ nav .Lighter a {
     border-style: none;
 }
 
-.rightHeader img {
-    padding-left: 2em;
-}
 
 #firtsMainImg {
     max-width: 295px;
@@ -438,6 +438,17 @@ input ::placeholder {
     color: #FFFFFF;
 }
 
+.zoom img{
+    height: 45px;
+    width: 45px;
+    transition: 2s;
+    
+}
+.zoom img:hover {
+    scale:(1.5);
+    cursor: pointer;
+}
+
 /*flex grid structure*/
 
 .flexGridContainer {
@@ -454,7 +465,7 @@ header {
 }
 
 .rightHeader {
-    padding-right: 2em;
+    width: 200px;
     padding-top: 2em;
 }
 
@@ -477,6 +488,9 @@ footer {
     background-color: #FFFFFF;
 }
 
+.firstPageMain {
+    margin-top: 50px;
+}
 
 /*mobile screens*/
 
@@ -518,6 +532,10 @@ footer {
 
 }
 
+#mainimg{
+    width:100%;
+    height:auto;
+}
 /*tablet screen size*/
 
 @media only screen and (min-width: 501px) and (max-width:799px) {
@@ -562,6 +580,7 @@ footer {
     }
     .coloredLinks {
         flex-direction: column;
+        align-items: center;
     }
     .infoBoxWrapper {
         flex-direction: column;
@@ -579,10 +598,7 @@ footer {
     .extras {
         flex-direction: column;
     }
-    #mainimg{
-        width:100%;
-        height:auto;
-    }
+
 }
 
 /*Large screens*/
@@ -640,7 +656,7 @@ footer {
     .mainFirstPage {
         padding-left: 3em;
         font-size: 120%;
-        margin-top: 4em;
+        margin-top: 2em;
     }
 
 }

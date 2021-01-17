@@ -41,14 +41,5 @@ function resize() {
         $(".logotype img").attr("src","./Assets/logo.png");
     }
 }
-
-/*function resize(){
-    if ($(window).width() > 768) { 
-      $(".logotype img").attr('src', './Assets/logo.png');
-
-  } else {
-    $(".logotype img").attr('src', './Assets/SmallerLogo.png');
-  }
-}*/
 resize();
 $(window).on('resize', resize);

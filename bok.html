@@ -36,10 +36,14 @@
             <div class="burgerBun"></div>
         </div>
 
-        <div class="rightHeader">
-            <img src="./Assets/icons8-sound-50.png" alt="icon of speaker">
-            <img src="./Assets/icons8-great-britain-48.png" alt="flag of great britain">
-            <img src="./Assets/search.png" alt="searchicon">
+        <div class="rightHeader flexbox flex-direction-row flex-justify-space-around flex-align-i-center">
+            <img src="./Assets/icons8-sound-50.png" alt="icon of speaker" class="zoom">
+            <img src="./Assets/icons8-great-britain-48.png" alt="flag of great britain" class="zoom">
+
+            <div class="flexbox flex-direction-column flex-align-i-center">
+                <img class="searchIcon" src="./Assets/search.png" alt="searchicon">
+                <span class="search">Sök</span>
+            </div>
         </div>
     </header>
     <main class="flexbox flex-direction-column flex-align-i-center">
@@ -70,13 +74,13 @@
             </fieldset>
             <br>
             <div class="flexbox flex-align-i-center flex-wrap-wrap flex-direction-row">
-                <button class="depatrButton" type="button" role="button">Avgång</button>
-                <button class="depatrButton" type="button" role="button">Ankomst</button>
+                <button class="depatrButton" type="button">Avgång</button>
+                <button class="depatrButton" type="button">Ankomst</button>
             </div>
             <fieldset class="flexbox flex-align-i-center flex-wrap-wrap flex-direction-row">
                 <div class="inputWrapper caleder">
                     <span class="select-value"></span>
-                    <input type="date" value="Idag" id="datePicker" name="datePicker" aria-label="Datum"
+                    <input type="date" value="date" id="datePicker" name="datePicker" aria-label="Datum"
                         autocomplete="on">
                     <input type="hidden" id="date" name="date" value="2021-01-12" data-format="yy-mm-dd">
                 </div>
@@ -131,8 +135,10 @@
         <!--end of alternativeContainer-->
         <div id="extraChoice"
             class="alternativContainer flexbox flex-align-i-center flex-wrap-wrap flex-direction-column">
-            <img src="./Assets/icons8-checked-50.png" alt="icon ofcheckmark">
-            <h2>Gör tillval</h2>
+            <div class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
+                <img src="./Assets/icons8-checked-50.png" alt="icon ofcheckmark" class="icon">
+                <h2>Gör tillval</h2>
+            </div>
             <div class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
                 <img class="somepadding" src="./Assets/paul-rysz-2VIghVvQBwQ-unsplash.jpg" alt="photograph of road">
                 <form action="">
@@ -144,14 +150,14 @@
                 </form>
             </div>
             <div class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-                <img src="./Assets/icons8-info-50.png" alt="icon of info" class="infoicon"/>
+                <img src="./Assets/icons8-info-50.png" alt="icon of info" class="infoicon" />
                 <p class="infoP">Här fyller du i om du kommer ha medresenär
                     som inkluderar ledsagare och eller ledhund med på din resa </p>
             </div>
             <div class="extras flexbox flex-align-i-center flex-wrap-wrap">
                 <div class="fellow flexbox flex-direction-column flex-align-i-center flex-wrap-wrap">
                     <h3>Medresenär</h3>
-                    <form action="" class="extrapadd">
+                    <form class="extrapadd">
                         <input type="number" name="Medresenar" id="quantity" min="0" max="4" value="0">
                     </form>
                 </div>
@@ -170,16 +176,16 @@
                 </div>
             </div>
             <div class="extrapadd flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-                <img class="somepadding"  src="./Assets/returningcars.png" alt="icon of info" />
+                <img class="somepadding" src="./Assets/returningcars.png" alt="icon of info" />
                 <p>Vill du boka tillbakaresa?</p>
             </div>
-            <form action="" class="alternativContainer  flexbox flex-direction-column">
+            <form class="alternativContainer  flexbox flex-direction-column">
                 <span>
-                    <input type="radio" name="Ledhund" id="yes" value="Ja">
+                    <input type="radio" name="Ledhund" id="y" value="Ja">
                     <label class="no-style" for="yes">Ja</label>
                 </span>
                 <span>
-                    <input type="radio" name="Ledhund" id="no" value="Nej">
+                    <input type="radio" name="Ledhund" id="n" value="Nej">
                     <label class="no-style" for="no">Nej</label>
                 </span>
             </form>
@@ -188,7 +194,7 @@
         <div id="message-form"
             class="flexbox flex-direction-column flex-align-i-center flex-wrap-wrap alternativContainer">
             <div class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-                <img src="./Assets/icons8-info-50.png" alt="icon of info" class="infoicon"/>
+                <img src="./Assets/icons8-info-50.png" alt="icon of info" class="infoicon" />
                 <p class="infoP">Om du har särskilda önskemål kan du skriva dem till oss i ett meddelande nedan. </p>
             </div>
             <p>Meddelande:</p>
@@ -198,7 +204,7 @@
         </div>
         <div class="flexbox flex-direction-column flex-align-i-center flex-wrap-wrap alternativContainer">
             <div class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-                <img src="./Assets/icons8-checked-50.png" alt="icon of checkmark" />
+                <img src="./Assets/icons8-checked-50.png" alt="icon of checkmark" class="icon" />
                 <h2>Bekräfta och boka din valda resa!</h2>
             </div>
             <form class="flexbox flex-direction-column flex-align-i-center flex-wrap-wrap">
@@ -207,7 +213,7 @@
                 <p>Ange ditt telefonummer eller e-postadress:</p>
                 <input type="text" name="confirmation" size="15" maxlength="30">
             </form>
-            <a href="confirm.html"> <input role="button" value="Boka" type="submit" class="loginButton"></a>
+            <a href="confirm.html"> <button class="loginButton">Boka</button></a>
         </div>
     </main>
     <footer class="flexbox flex-justify-space-evenly">

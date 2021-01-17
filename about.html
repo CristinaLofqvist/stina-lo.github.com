@@ -34,24 +34,30 @@
             <div class="burgerBun"></div>
         </div>
 
-        <div class="rightHeader">
+        <div class="rightHeader flexbox flex-direction-row flex-justify-space-around flex-align-i-center">
             <img src="./Assets/icons8-sound-50.png" alt="icon of speaker">
             <img src="./Assets/icons8-great-britain-48.png" alt="flag of great britain">
-            <img src="./Assets/search.png" alt="searchicon">
+
+            <div class="flexbox flex-direction-column flex-align-i-center">
+                <img class="searchIcon" src="./Assets/search.png" alt="searchicon">
+                <span class="search">Sök</span>
+            </div>
         </div>
     </header>
     <main>
         <div class="flexbox flex-direction-column flex-align-i-center">
             <img src="./Assets/returningcars.png" alt="icon of cars" />
             <h1>Om färdtjänst</h1>
-            <hr>
+            <span>
+                <hr>
+            </span>
         </div>
         <div class="aboutDiv">
             <img src="./Assets/elijah-m-henderson-DMED-sOt1Ak-unsplash.jpg" alt="phtograph ofroad in fall">
             <div>
                 <article>
                     <div class="flexwrapperArticle">
-                        <h3>Vad är färdtjänst?</h3>
+                        <h2>Vad är färdtjänst?</h2>
                     </div>
                     <p>Färdtjänst ingår i kollektivtrafiken. Det innebär att du
                         reser med kollektivtrafik som alla andra men med service och färdmedel
@@ -60,7 +66,7 @@
                 </article>
                 <article>
                     <div class="flexwrapperArticle">
-                        <h3>Vem kan åka med färdtjänsten?</h3>
+                        <h2>Vem kan åka med färdtjänsten?</h2>
                     </div>
                     <p>Om du har särskilda behov som gör att du inte kan
                         använda dig av den vanliga kollektivtrafiken kan du
@@ -75,19 +81,10 @@
         </div>
         <div class="flexbox flex-direction-column flex-align-i-center">
             <div class="flexbox flex-direction-row flex-align-i-center">
-                <img src="./Assets/icons8-news-50.png" alt="icon of certificat" />
-                <h1>Om intyg</h1>
-            </div>
-            <span>
-                <hr></span>
-        </div>
-        <div class="flexbox flex-direction-column flexbox flex-align-i-center flex-justify-space-around infoDiv">
-            <div class="flexbox flex-direction-row flex-align-i-center">
-
                 <img class="infoicon" src="./Assets/icons8-info-50.png" alt="icon of info" />
                 <h2>Information</h2>
             </div>
-            <p class="flexbox flex-direction-column flexbox flex-align-i-center flex-justify-space-around"> Rätten till
+            <p class="infoP"> Rätten till
                 färdtjänst grundar sig i färdtjänstlagen.
                 För att få rätt till färdtjänst krävs att du är folkbokförd i
                 kommunen du ansöker hos. Det krävs också att du har väsentliga
@@ -97,8 +94,14 @@
                 eller sjukresor krävs att du har läkarintyg som styrker detta.
             </p>
         </div>
-
-        <div class="flexbox flex-direction-column flex-align-i-center flex-justify-space-around infoDiv">
+        <div class="flexbox flex-direction-column flex-align-i-center">
+            <div class="flexbox flex-direction-row flex-align-i-center">
+                <h1>Om intyg</h1>
+            </div>
+            <span>
+                <hr></span>
+        </div>
+        <div class="flexbox flex-direction-column flex-align-i-center flex-justify-space-around">
             <div class="flexbox flex-direction-row flex-align-i-center">
 
                 <img class="infoicon" src="./Assets/icons8-news-50.png" alt="icon of certificat" />

@@ -35,10 +35,14 @@
             <div class="burgerBun"></div>
         </div>
 
-        <div class="rightHeader">
-            <img src="./Assets/icons8-sound-50.png">
-            <img src="./Assets/icons8-great-britain-48.png">
-            <img src="./Assets/search.png">
+        <div class="rightHeader flexbox flex-direction-row flex-justify-space-around flex-align-i-center">
+            <img src="./Assets/icons8-sound-50.png" alt="icon of speaker">
+            <img src="./Assets/icons8-great-britain-48.png" alt="flag of great britain">
+
+            <div class="flexbox flex-direction-column flex-align-i-center">
+                <img class="searchIcon" src="./Assets/search.png" alt="searchicon">
+                <span class="search">Sök</span>
+            </div>
         </div>
     </header>
     <main class="flexbox firstPageMain flex-align-i-center flex-direction-column">
@@ -49,7 +53,7 @@
                 <img src="./Assets/Group 26.png" class="arrow" alt="illustration of arrow">
                 <a href="mypage-myinfo.html">Mina inställningar</a>
                 <img src="./Assets/Group 26.png" class="arrow" alt="illustration of arrow">
-                <a href="mypage.html">Mina intyg</a>
+                <a href="mycert.html">Mina intyg</a>
             </nav>
         </div>
         <br>
@@ -68,7 +72,7 @@
         <br>
         <div>
             <div class="flexbox flex-direction-row">
-                <img src="./Assets/icons8-checked-50.png" alt="icon of checkmark">
+                <img src="./Assets/icons8-checked-50.png" alt="icon of checkmark" class="icon">
                 <p>Mina bokade resor:</p>
             </div>
             <table class="bokboardTable">
@@ -111,7 +115,7 @@
         <br>
         <div>
             <div class="flexbox flex-direction-row infoDiv">
-                <img src="./Assets/icons8-checked-50.png" alt="icon of checkmark">
+                <img src="./Assets/icons8-checked-50.png" alt="icon of checkmark"class="icon">
                 <p>Mina senaste resor:</p>
             </div>
             <table class="bokboardTable">
@@ -142,7 +146,7 @@
                             120kr
                         </td>
                         <td>
-                            <button class="bokboardTableButton">Omboka</button>
+                            <a href="bok.html"><button class="bokboardTableButton">Omboka</button></a>
                         </td>
                     </tr>
                 </tbody>

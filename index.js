@@ -48,5 +48,3 @@ function resize() {
         $(".mainNav").attr("style", "opacity: 1;")
     }
 }
-resize();
-$(window).on('resize', resize);

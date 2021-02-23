@@ -33,11 +33,7 @@
                 </div>
             </div>
         </div>
-        <div id="burgerMenu" onclick="toggleOpen('burgerMenu','mainNav')">
-            <div class="burgerBun"></div>
-            <div class="burgerBun"></div>
-            <div class="burgerBun"></div>
-        </div>
+ 
         <div class="flexbox flex-direction-column flex-align-i-center w-100">
             <nav class="mainNav " id="mainNav">
                 <a href="index.html">Start</a>
@@ -56,13 +52,14 @@
                 <img src="./Assets/smallArrow.png" class="arrow" alt="illustration of arrow">
                 <span class="Lighter"><a href="cancel-confirm.html">Bekräfta avbokning</a></span>
             </nav>
-        </div>
-        <div class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-            <img src="./Assets/john-towner-3Kv48NS4WUU-unsplash.png" alt="photograph of road">
-            <div class="flexbox flex-direction-row">
-                <h1>Bekräftelse på avbokning</h1>
-                <div>
-                    <hr></div>
+        </div> 
+        <div class="bokDiv">
+            <img id="bokRound" src="./Assets/john-towner-3Kv48NS4WUU-unsplash.png" alt="photograph of road">
+            <div>
+                <div class="flexbox flex-direction-row">
+                    <h1 id="confirmUnBokHeading">Bekräftelse på avbokning</h1>
+                </div>
+                <hr>
             </div>
         </div>
         <br>
@@ -77,14 +74,11 @@
             <img src="./Assets/icons8-info-50.png" alt="icon of info" />
             <p class="infoP">Följande resa är nu avbokad:</p>
         </div>
-        <div style="overflow-x:auto;" class="w-100 flexbox flex-direction-column">
+        <div class="w-100 flexbox flex-direction-column">
             <table class="bokboardTable">
                 <thead>
                     <tr>
                         <th>Datum</th>
-                        <th>Avgång</th>
-                        <th>Ankost</th>
-                        <th>Restid</th>
                         <th>Pris</th>
                     </tr>
                 </thead>
@@ -94,6 +88,22 @@
                             21 Jan
                         </td>
                         <td>
+                            120kr
+                        </td>
+
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th>Avgång</th>
+                        <th>Ankost</th>
+                        <th>Restid</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
                             ca:13:15
                         </td>
                         <td>
@@ -102,10 +112,9 @@
                         <td>
                             1h 10min
                         </td>
-                        <td>
-                            120kr
-                        </td>
+
                     </tr>
+
                 </tbody>
             </table>
         </div>

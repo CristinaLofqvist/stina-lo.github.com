@@ -70,27 +70,41 @@
         <br>
         <br>
         <div class="flexbox flex-align-i-center flex-direction-column flex-justify-center w-100">
+           
             <div class="flexbox flex-direction-row">
                 <img src="./Assets/icons8-checked-50.png" alt="icon of checkmark" class="icon">
                 <p>Mina bokade resor:</p>
             </div>
-            <div style="overflow-x:auto;" class="w-100 flexbox flex-direction-column">
+            <div class="flexbox flex-direction-column">
                 <table class="bokboardTable">
                     <thead>
                         <tr>
                             <th>Datum</th>
-                            <th>Avgång</th>
-                            <th>Ankost</th>
-                            <th>Restid</th>
                             <th>Pris</th>
-                            <th></th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <tr>
                             <td>
                                 21 Jan
                             </td>
+                            <td>
+                                120kr
+                            </td>
+
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>Avgång</th>
+                            <th>Ankost</th>
+                            <th>Restid</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
                             <td>
                                 ca:13:15
                             </td>
@@ -100,13 +114,12 @@
                             <td>
                                 1h 10min
                             </td>
+
+                        </tr>
+                        <tr>
                             <td>
-                                120kr
-                            </td>
-                            <td>
-                                <button 
-                                    onclick="location.href = 'cancel.html';" class="bokboardTableButton">Avboka<img
-                                            src="./Assets/icons8-remove-50.png" alt="icon of trashcan" /></button>
+                                <button onclick="location.href = 'cancel.html';" class="bokboardTableButton">Avboka<img
+                                        src="./Assets/icons8-remove-50.png" alt="icon of trashcan" /></button>
                             </td>
                         </tr>
                     </tbody>
@@ -115,28 +128,41 @@
             <br>
             <br>
             <br>
-
-            <div class="flexbox flex-direction-row infoDiv">
+            <div class="flexbox flex-direction-row">
                 <img src="./Assets/icons8-checked-50.png" alt="icon of checkmark" class="icon">
-                <p>Mina senaste resor:</p>
+                <p>Mina återkommande resor:</p>
             </div>
-            <div style="overflow-x:auto;" class="w-100 flexbox flex-direction-column">
+            <div class="flexbox flex-direction-column">
                 <table class="bokboardTable">
                     <thead>
                         <tr>
-                            <th>Datum</th>
+                            <th>Dagar</th>
+                            <th>Pris</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                               Tisdag <br> 
+                               Onsdag
+                            </td>
+                            <td>
+                                120kr
+                            </td>
+
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
                             <th>Avgång</th>
                             <th>Ankost</th>
                             <th>Restid</th>
-                            <th>Pris</th>
-                            <th></th>
+
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
-                                21 Jan
-                            </td>
                             <td>
                                 ca:13:15
                             </td>
@@ -146,12 +172,68 @@
                             <td>
                                 1h 10min
                             </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <button onclick="location.href = 'cancel.html';" class="bokboardTableButton">Avboka<img
+                                        src="./Assets/icons8-remove-50.png" alt="icon of trashcan" /></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="flexbox flex-direction-row infoDiv">
+                <img src="./Assets/icons8-checked-50.png" alt="icon of checkmark" class="icon">
+                <p>Mina senaste resor:</p>
+            </div>
+            <div class=" flexbox flex-direction-column">
+                <table class="bokboardTable">
+                    <thead>
+                        <tr>
+                            <th>Datum</th>
+                            <th>Pris</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                21 Jan
+                            </td>
                             <td>
                                 120kr
                             </td>
+
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>Avgång</th>
+                            <th>Ankost</th>
+                            <th>Restid</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
                             <td>
-                                
-                                <button onclick="location.href = 'bok.html';" class="bokboardTableButton">Omboka</button>
+                                ca:13:15
+                            </td>
+                            <td>
+                                ca:14:25
+                            </td>
+                            <td>
+                                1h 10min
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <button onclick="location.href = 'bok.html';"
+                                    class="bokboardTableButton">Omboka</button>
                             </td>
                         </tr>
                     </tbody>
@@ -189,7 +271,7 @@
         </div>
         <div class="footerMiddleDiv flexbox flex-direction-column flex-align-i-center">
             <h3>Länkar</h3>
-            <a href="">Logga ut</a>
+            <a href="loggedout.html">Logga ut</a>
             <a href="">Se instruktionsvideo</a>
             <a href="">Ljudinspelning</a>
         </div>
@@ -198,13 +280,13 @@
             <h3 class="flex-justify-center">Socialamedier</h3>
             <div class="socialMediaIcon flexbox flex-direction-row">
                 <a href="https://www.facebook.com/"><img src="./Assets/iconfinder_1_Facebook2_colored_svg_5296500.png"
-                    alt="facebookicon"></a>
-            <a href="https://www.linkedin.com/"><img
-                    src="./Assets/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png" alt="linkedin icon"></a>
-            <a href="https://www.pinterest.com/"><img src="./Assets/iconfinder_1_Pinterest_colored_svg_5296503.png"
-                    alt="pinterest icon"></a>
-            <a href="https://www.twitter.com/"><img src="./Assets/iconfinder_1_Twitter3_colored_svg_5296516.png"
-                    alt="twitter icon"></a>
+                        alt="facebookicon"></a>
+                <a href="https://www.linkedin.com/"><img
+                        src="./Assets/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png" alt="linkedin icon"></a>
+                <a href="https://www.pinterest.com/"><img src="./Assets/iconfinder_1_Pinterest_colored_svg_5296503.png"
+                        alt="pinterest icon"></a>
+                <a href="https://www.twitter.com/"><img src="./Assets/iconfinder_1_Twitter3_colored_svg_5296516.png"
+                        alt="twitter icon"></a>
             </div>
         </div>
     </footer>

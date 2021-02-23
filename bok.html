@@ -33,11 +33,7 @@
                 </div>
             </div>
         </div>
-        <div id="burgerMenu" onclick="toggleOpen('burgerMenu','mainNav')">
-            <div class="burgerBun"></div>
-            <div class="burgerBun"></div>
-            <div class="burgerBun"></div>
-        </div>
+
         <div class="flexbox flex-direction-column flex-align-i-center w-100">
             <nav class="mainNav" id="mainNav">
                 <a href="index.html">Start</a>
@@ -52,8 +48,8 @@
 
 
     <main class="flexbox flex-direction-column flex-align-i-center">
-        <div class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap bokDiv">
-            <img src="./Assets/john-towner-3Kv48NS4WUU-unsplash.png" alt="photograph of road">
+        <div class="bokDiv">
+            <img id="bokRound" src="./Assets/john-towner-3Kv48NS4WUU-unsplash.png" alt="photograph of road">
             <div>
                 <div class="flexbox flex-direction-row">
                     <h1>Boka resa</h1>
@@ -69,7 +65,7 @@
                 <button class="depatrButton" type="button">Ankomst</button>
             </div>
             <br>
-            <fieldset class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap flex-justify-space-around">
+            <fieldset class="from-to">
                 <div class="inputWrapper">
                     <label class="bokLabel">Från</label>
                     <span class="controls"><input id="from" name="from" type="search" autocomplete="On"
@@ -83,11 +79,10 @@
                 </div>
             </fieldset>
             <br>
-            <fieldset class="flexbox flex-align-i-center flex-wrap-wrap flex-direction-row">
+            <fieldset class="date-booking">
                 <div class="inputWrapper caleder">
                     <span class="select-value"></span>
-                    <input type="date" id="datePicker" name="datePicker" aria-label="Datum"
-                        autocomplete="on">
+                    <input type="date" id="datePicker" name="datePicker" aria-label="Datum" autocomplete="on">
                     <input type="hidden" id="date" name="date" value="2021-01-12" data-format="yy-mm-dd">
                 </div>
 
@@ -129,6 +124,22 @@
                 </div>
 
             </fieldset>
+            <fieldset class="re-booking">
+                <p>Återkommande resa</p>
+                <form class="flexbox flex-direction-column  flex-justify-center">
+                    <span>
+                        <input type="radio" name="ater" id="yes-ater" value="Ja" onclick="showDays();">
+                        <label class="no-style" for="ater-yes">Ja</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="ater" id="no-ater" value="Nej" onclick="hideDays()">
+                        <label class="no-style" for="ater-no">Nej</label>
+                    </span>
+                </form>
+
+            </fieldset>
+            <div id="days">
+            </div>
             <!--Widget area goes here-->
             <br>
             <br>
@@ -219,7 +230,7 @@
                 <p>Ange ditt telefonummer eller e-postadress:</p>
                 <input type="text" name="confirmation" size="15" maxlength="30">
             </form>
-           <button class="loginButton" onclick="location.href = 'confirm.html';">Boka</button>
+            <button class="loginButton" onclick="location.href = 'confirm.html';">Boka</button>
         </div>
     </main>
     <footer class="flexbox flex-justify-space-evenly">

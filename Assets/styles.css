@@ -8,6 +8,11 @@ body {
     width: 100%;
 }
 
+tr {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 h3, label, button, li {
     font-family: 'Montserrat', sans-serif;
     max-width: 600px;
@@ -16,6 +21,10 @@ h3, label, button, li {
 
 footer h1, footer h2, footer h3, footer h4 {
     color: #707070;
+}
+
+td {
+    text-align: center;
 }
 
 .logo {
@@ -90,9 +99,11 @@ header, footer {
     border-radius: 15px 5px 0px 0px;
     margin-left: 5px;
 }
-.mainNav a:last-child{
+
+.mainNav a:last-child {
     margin-right: 5px;
 }
+
 .mainNav {
     display: flex;
     flex-direction: row;
@@ -103,7 +114,6 @@ header, footer {
 }
 
 .mainNav a:hover {
-
     background-color: #FEFCF6;
     color: black;
 }
@@ -159,58 +169,48 @@ main {
 #blue {
     background: rgba(204, 225, 224, 0.8);
     width: 234px;
-    height: 152px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2em;
 }
 
 #green {
     background: rgba(83, 94, 99, 0.8);
     width: 234px;
-    height: 152px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2em;
     color: white;
 }
 
 #pink {
     background: rgba(247, 193, 189, 0.8);
     width: 234px;
-    height: 152px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2em;
 }
 
 #purple {
     background: rgba(89, 60, 93, 0.8);
     width: 234px;
-    height: 152px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2em;
     color: white;
 }
 
 #orange {
     background: rgba(236, 97, 55, 0.8);
     width: 234px;
-    height: 152px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2em;
 }
 
 #orange:hover {
@@ -250,7 +250,7 @@ main {
 }
 
 .coloredLinks {
-    justify-content: center;
+    justify-content: space-evenly;
     padding-bottom: 2em;
 }
 
@@ -306,6 +306,12 @@ button:focus, .loginButton:focus {
     font-size: 14px;
 }
 
+.coloredLinks div {
+    min-height: 152px;
+    height: 152px;
+    min-width: 230px;
+}
+
 .extrapadd {
     padding-top: 12%;
 }
@@ -316,6 +322,15 @@ button:focus, .loginButton:focus {
 
 .aboutDiv {
     margin-top: 3em;
+}
+
+#ater {
+    margin-right: 5px;
+}
+
+.aboutDiv img {
+    width: 100%;
+    height: auto;
 }
 
 ol li {
@@ -349,7 +364,29 @@ fieldset {
     border: 0;
 }
 
-label, input {
+#days div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#days div label {
+    margin-left: 10px;
+}
+
+#days {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+label {
+    padding: 10px;
+    color: black;
+    border: 1px solid #c1bebb;
+}
+
+input {
     padding: 0.5em;
     color: black;
     border: 1px solid #c1bebb;
@@ -373,9 +410,7 @@ input ::placeholder {
     font-family: 'Playfair Display', serif;
 }
 
-
 .bokLabel {
-    float: left;
     height: 18px;
 }
 
@@ -429,7 +464,7 @@ input ::placeholder {
 }
 
 .bokboardTable th, .bokboardTable td {
-    padding: 20px;
+    padding: 10px;
 }
 
 .bokboardTableButton {
@@ -440,7 +475,8 @@ input ::placeholder {
     display: flex;
     align-items: center;
 }
-.paddingBottom li{
+
+.paddingBottom li {
     padding-bottom: 20px;
 }
 
@@ -449,19 +485,26 @@ input ::placeholder {
     color: #FFFFFF;
 }
 
+#bokRound {
+    max-width: 280px;
+}
 
 /*flex grid structure*/
 
 .flexGridContainer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px  auto  200px;
+    grid-template-rows: 200px auto 200px;
     height: 100%;
     grid-template-areas: "h h h h h h h h h h h h" "m m m m m m m m m m m m" "f f f f f f f f f f f f";
 }
 
 header {
     grid-area: h;
+}
+
+#firtsMainImg {
+    width: 100%;
 }
 
 .rightHeader {
@@ -497,15 +540,70 @@ footer {
     height: 225px;
 }
 
+.from-to {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.date-booking {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 /*mobile screens*/
 
 @media only screen and (max-width:500px) {
-    .mainNav{
-        opacity: 0;
+    #availablity {
+        width: 100%;
+    }
+    #confirmHeading {
+        font-size: 1.5em;
+        max-width: 280px;
+    }
+    #availablity h2 {
+        font-size: 1.2em;
+        max-width: 280px;
+    }
+    .bokDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainNav {
         font-size: 50%;
     }
+    .bokDiv {
+        width: 100%;
+    }
+    .rightHeader img {
+        height: 25px;
+        width: 25px;
+    }
+    .searchIcon {
+        width: 35px;
+        height: 35px;
+    }
+    .bokboardTable th, .bokboardTable td {
+        font-size: 80%;
+    }
+    .date-booking {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .from-to {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
     main {
-        padding: 50px;
+        padding: 20px;
         margin-top: 0px;
         margin: 0px;
     }
@@ -527,10 +625,16 @@ footer {
     .firstPageMain, .mainFirstPage {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+    .mainFirstPage {
+        width: 100%
     }
     .coloredLinks {
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        height: 1000px;
     }
     .infoBoxWrapper {
         flex-direction: column;
@@ -538,7 +642,7 @@ footer {
     .alternativContainer {
         border: 2px solid #c1bebb;
         margin: 2em;
-        padding: 2em;
+        padding: 10px;
     }
     .extras {
         flex-direction: column;
@@ -573,7 +677,7 @@ footer {
         z-index: 1001;
     }
     .mainImgWrapper {
-        width:100%;
+        width: 100%;
     }
 }
 
@@ -584,10 +688,7 @@ footer {
 
 /*tablet screen size*/
 
-@media only screen and (min-width: 501px) and (max-width:799px) {
-    .mainNav {
-        opacity: 0;
-    }
+@media only screen and (min-width: 501px) and (max-width:999px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -623,13 +724,11 @@ footer {
         transform-origin: 1px;
         z-index: 1001;
     }
-    #mainNav {
-        transition: transform 0.3s ease-in-out;
-        z-index: 2;
-    }
     .coloredLinks {
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        height: 1000px;
     }
     .infoBoxWrapper {
         flex-direction: column;
@@ -645,14 +744,40 @@ footer {
     .extras {
         flex-direction: column;
     }
-    .mainImgWrapper {
-        width:50%;
+    .bokDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 }
 
 /*Large screens*/
 
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 1200px) {
+    .coloredLinks {
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: space-between;
+        height: 1000px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .bokDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .firstPageMain{
+        flex-direction: row;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .footerMiddleDiv {
         flex-direction: column;
         align-items: center;
@@ -708,8 +833,4 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    .mainImgWrapper {
-        width:50%;
-    }
 }
-

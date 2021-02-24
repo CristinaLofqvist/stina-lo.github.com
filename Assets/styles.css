@@ -438,6 +438,7 @@ input ::placeholder {
 #quantity {
     max-width: 50px;
     font-weight: bold;
+    color: black;
 }
 
 .no-style {

@@ -50,13 +50,13 @@ function resize() {
 }
  function showDays() {
     var htmlElement = document.getElementById("days");
-    htmlElement.innerHTML = '<div><input type="checkbox" id="monday-check" name="monday"><label for="monday">Måndag</label></div>' +
-    '<div><input type="checkbox" id="tuesday-check" name="tuesday"><label for="tuesday">Tisdag</label></div>' +
-    '<div><input type="checkbox" id="wensday-check" name="wensday"><label for="wensday">Onsdag</label></div>' +
-    '<div><input type="checkbox" id="thursday-check" name="thursday"><label for="thursday">Torsdag</label></div>' +
-    '<div><input type="checkbox" id="friday-check" name="friday"><label for="friday">Fredag</label></div>' +
-    '<div><input type="checkbox" id="saturday-check" name="saturday"><label for="saturday">Lördag</label></div>' +
-    '<div><input type="checkbox" id="sunday-check" name="sunday"><label for="sunday">Söndag</label></div>'
+    htmlElement.innerHTML = '<div><input type="checkbox" id="monday-check" name="monday"><label for="monday-check">Måndag</label></div>' +
+    '<div><input type="checkbox" id="tuesday-check" name="tuesday"><label for="tuesday-check">Tisdag</label></div>' +
+    '<div><input type="checkbox" id="wensday-check" name="wensday"><label for="wensday-check">Onsdag</label></div>' +
+    '<div><input type="checkbox" id="thursday-check" name="thursday"><label for="thursday-check">Torsdag</label></div>' +
+    '<div><input type="checkbox" id="friday-check" name="friday"><label for="friday-check">Fredag</label></div>' +
+    '<div><input type="checkbox" id="saturday-check" name="saturday"><label for="saturday-check">Lördag</label></div>' +
+    '<div><input type="checkbox" id="sunday-check" name="sunday"><label for="sunday-check">Söndag</label></div>'
     htmlElement.style.height = "500px";
  }
 

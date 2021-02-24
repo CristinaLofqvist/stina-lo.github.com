@@ -28,8 +28,8 @@ td {
 }
 
 .logo {
-    max-width: 85px;
-    max-height: 85px;
+    width: auto;
+    height: 85px;
 }
 
 h1, h2, h4, h5, h6, .pitch, .pitch p {

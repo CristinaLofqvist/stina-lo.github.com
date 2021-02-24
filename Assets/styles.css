@@ -270,7 +270,7 @@ form input {
     margin-bottom: 1.8em;
     padding: 0.5em;
     font-family: 'Montserrat', sans-serif;
-    color: grey;
+    color: black;
     font-size: 90%;
 }
 
@@ -286,7 +286,7 @@ form input {
 
 button:hover, .loginButton:hover {
     background-color: white;
-    color: #EC6137;
+    color: black;
     cursor: pointer;
 }
 

@@ -76,45 +76,46 @@
 
             <form class="alternativContainer">
                 <span class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-                    <label class="no-style">Förnamn:</label>
+                    <label class="no-style" for="fname">Förnamn:</label>
                     <input class="no-style" type="text" id="fname" name="fname" value="Namn"><br>
                 </span>
                 <span class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-                    <label class="no-style">Efternamn:</label><br>
-                    <input class="no-style" type="text" name="lname" value="Namnasson"><br><br>
+                    <label class="no-style" for="lname">Efternamn:</label><br>
+                    <input class="no-style" type="text"  id="lname" name="lname" value="Namnasson"><br><br>
                 </span>
                 <span class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-                    <label class="no-style">Personnummer:</label><br>
-                    <input class="no-style" type="text" name="lname" value="1945xxxxxx"><br><br>
+                    <label class="no-style" for="socialsecuritynumber">Personnummer:</label><br>
+                    <input class="no-style" type="text" id="socialsecuritynumber" name="socialsecuritynumber" value="1945xxxxxx"><br><br>
                 </span>
                 <span class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-                    <label class="no-style">Ombud/God man:</label><br>
-                    <input class="no-style" type="text" name="lname" value="Nej"><br><br>
+                    <label class="no-style" for="ombud">Ombud/God man:</label><br>
+                    <input class="no-style" type="text" id="ombud" name="ombud" value="Nej"><br><br>
                 </span>
                 <span class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-                    <label class="no-style">Medpassagerare:</label><br>
-                    <label class="no-style">Barn:</label><br>
-                    <input class="no-style" type="text" id="lname" name="lname" value="2st"><br><br>
+                    <label class="no-style" for="passangers">Medpassagerare:</label><br>
+                    <input class="no-style" type="text" id="passangers" name="passangers" value="2st">
+                    <label class="no-style" for="childs">Barn:</label><br>
+                    <input class="no-style" type="text" id="childs" name="childs" value="2st"><br><br>
                 </span>
                 <span class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-                    <label class="no-style">Ledsagare:</label><br>
-                    <input type="text" name="lname" value="Nej"><br><br>
+                    <label class="no-style" for="ledsagare">Ledsagare:</label><br>
+                    <input type="text" id="ledsagare" name="ledsagare" value="Nej"><br><br>
                 </span>
                 <span class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-                    <label class="no-style">Hjälpmedel:</label><br>
-                    <input class="no-style" type="text" name="lname" value="Rullstol"><br><br>
+                    <label class="no-style" for="help">Hjälpmedel:</label><br>
+                    <input class="no-style" type="text" id="help" name="help" value="Rullstol"><br><br>
                 </span>
                 <span class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-                    <label class="no-style">Assisterande ledhund:</label><br>
-                    <input class="no-style" type="text" name="lname" value="Nej"><br><br>
+                    <label class="no-style" for="dog">Assisterande ledhund:</label><br>
+                    <input class="no-style" type="text" id="dog" name="dog" value="Nej"><br><br>
                 </span>
                 <span class="flexbox flex-direction-row flex-align-i-center flex-wrap-wrap">
-                    <label class="no-style">Intyg:</label><br>
-                    <input class="no-style" type="text" name="lname" value="Sjukresa t. 20220130 "><br><br>
+                    <label class="no-style" for="intyg">Intyg:</label><br>
+                    <input class="no-style" type="text" id="intyg" name="intyg" value="Sjukresa t. 20220130 "><br><br>
 
-                    <input class="no-style" type="text" name="lname" value="Färdtäjnst t. 20220130 "><br><br>
+                    <input class="no-style" aria-label="intyg2" type="text" id="fardtjanst" name="färdtjänst" value="Färdtäjnst t. 20220130 "><br><br>
                 </span>
-                <input class="loginButton" type="button" name="edit" id="edit" value="Redigera">
+                <input class="loginButton" aria-label="Editera" type="button" name="edit" id="edit" value="Redigera">
             </form>
 
     </main>
